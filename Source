@@ -2193,7 +2193,7 @@ function library:CreateWindow(options, ...)
 		if image then
 			image = resolveid(image)
 		end
-		local tabName = options.Name or "Unnamed Tab"
+		local tabName = options.Name or "Settings"
 		options.Name = tabName
 		windowFunctions.tabCount = windowFunctions.tabCount + 1
 		local newTab = Instance_new((image and "ImageButton") or "TextButton")
